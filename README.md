@@ -25,3 +25,8 @@
 │   ├── title_thesis_htlinn.tex Das Titelblatt, hier werden die Infos von main.tex eingebaut
 │   └── typographic_settings.texHier sollte man wenig ändern müssen
 ```
+## Anpassungen
+
+### Einseitige Ansicht
+
+In der Datei template/preamble.tex ist für die *documentclass* ganz oben ein Parameter *twoside = true* zu finden. Setzt man diesen auf *false* wechselt die Einrückung nicht bei jeder Seite sondern bleibt gleich  
