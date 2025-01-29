@@ -30,3 +30,16 @@
 ### Einseitige Ansicht
 
 In der Datei template/preamble.tex ist für die *documentclass* ganz oben ein Parameter *twoside = true* zu finden. Setzt man diesen auf *false* wechselt die Einrückung nicht bei jeder Seite sondern bleibt gleich  
+
+### Ändern der Zitierweise
+
+Möchte man z.B. auf IEEE-Zitierung umstellen (d.h. eine Literaturstelle wird mit [1], [2], [3] referenziert) muss man in *main.tex* folgende Zeilen auskommentieren und die 2 unteren hinzufügen
+
+```latex
+%\usepackage{natbib} %
+%\bibliographystyle{agsm}
+\usepackage{cite}
+\bibliographystyle{IEEEtran}
+```
+
+Man muss allerdings vorher alle bereits von Latex erzeugten Dateien löschen.
